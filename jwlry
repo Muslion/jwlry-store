@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JWLRY | Handmade Jewelry</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#fafafa;
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+letter-spacing:3px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:70vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{
+font-size:56px;
+letter-spacing:5px;
+}
+
+.hero p{
+margin:20px 0;
+font-size:20px;
+}
+
+.btn{
+background:#d4af37;
+padding:12px 28px;
+border:none;
+border-radius:25px;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:80px 10%;
+text-align:center;
+}
+
+.products h2{
+margin-bottom:40px;
+font-size:36px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.product{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-5px);
+}
+
+.product img{
+width:100%;
+border-radius:10px;
+}
+
+.product h3{
+margin:10px 0;
+}
+
+.price{
+color:#d4af37;
+font-weight:600;
+}
+
+/* ABOUT */
+
+.about{
+padding:80px 15%;
+background:white;
+text-align:center;
+}
+
+.about h2{
+margin-bottom:20px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border-radius:6px;
+border:1px solid #ddd;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+color:white;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">JWLRY</div>
+
+<ul>
+<li><a href="#products">Shop</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>JWLRY</h1>
+<p>Handmade Jewelry Crafted With Love</p>
+<button class="btn">Shop Now</button>
+
+</section>
+
+<section class="products" id="products">
+
+<h2>Our Pieces</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908">
+<h3>Gold Necklace</h3>
+<p class="price">$45</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1602752250015-52934bc45613">
+<h3>Pearl Earrings</h3>
+<p class="price">$30</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0">
+<h3>Silver Ring</h3>
+<p class="price">$25</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338">
+<h3>Gem Bracelet</h3>
+<p class="price">$35</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About JWLRY</h2>
+
+<p>
+JWLRY is a small handmade jewelry brand focused on timeless design and quality craftsmanship.
+Each piece is created with care, blending elegance with everyday wearability.
+Our mission is to bring unique handmade jewelry to people who value authenticity and beauty.
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact / Order</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Your message or order"></textarea>
+
+<button class="btn">Send</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 JWLRY Handmade Jewelry</p>
+
+</footer>
+
+</body>
+</html>
